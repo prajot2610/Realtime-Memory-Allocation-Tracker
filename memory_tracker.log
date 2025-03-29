@@ -1,0 +1,70 @@
+2025-03-29 17:16:12,852 - WARNING - Potential memory leak detected! Projected increase: 32.09MB/min
+2025-03-29 17:16:17,792 - WARNING - Potential memory leak detected! Projected increase: 15.61MB/min
+2025-03-29 17:16:18,931 - INFO - Memory leak condition cleared
+2025-03-29 17:16:32,149 - WARNING - Potential memory leak detected! Projected increase: 10.44MB/min
+2025-03-29 17:16:39,271 - INFO - Memory leak condition cleared
+2025-03-29 17:16:55,198 - INFO - Theme changed to Dark
+2025-03-29 17:17:03,698 - INFO - Memory leak condition cleared
+2025-03-29 17:24:23,980 - INFO - Theme changed to System
+2025-03-29 17:24:27,427 - INFO - Theme changed to Dark
+2025-03-29 17:24:30,531 - WARNING - Potential memory leak detected! Projected increase: 10.44MB/min
+2025-03-29 17:24:47,845 - INFO - Memory leak condition cleared
+2025-03-29 17:25:16,958 - INFO - Manual garbage collection performed
+2025-03-29 17:25:20,497 - INFO - Data exported to memory_data_20250329_172520.csv
+2025-03-29 17:25:25,590 - WARNING - Potential memory leak detected! Projected increase: 10.33MB/min
+2025-03-29 17:25:46,993 - INFO - Memory leak condition cleared
+2025-03-29 17:25:54,729 - INFO - Manual garbage collection performed
+2025-03-29 17:26:00,064 - INFO - Manual garbage collection performed
+2025-03-29 17:31:17,116 - INFO - Manual garbage collection performed
+2025-03-29 17:32:43,574 - INFO - Manual garbage collection performed
+2025-03-29 17:40:50,280 - INFO - Theme changed to Dark
+2025-03-29 17:41:09,785 - WARNING - Potential memory leak detected! Projected increase: 38.11MB/min
+2025-03-29 17:41:28,117 - INFO - Memory leak condition cleared
+2025-03-29 17:41:29,138 - WARNING - Potential memory leak detected! Projected increase: 10.27MB/min
+2025-03-29 17:41:35,273 - INFO - Memory leak condition cleared
+2025-03-29 17:49:14,774 - INFO - Data exported to memory_data_20250329_174914.csv
+2025-03-29 17:49:20,580 - WARNING - Potential memory leak detected! Projected increase: 10.55MB/min
+2025-03-29 17:49:39,940 - INFO - Memory leak condition cleared
+2025-03-29 19:19:32,815 - WARNING - Potential memory leak detected! Projected increase: 10.95MB/min
+2025-03-29 19:19:33,819 - INFO - Memory leak condition cleared
+2025-03-29 19:19:38,935 - WARNING - Potential memory leak detected! Projected increase: 10.09MB/min
+2025-03-29 19:19:51,145 - INFO - Theme changed to Dark
+2025-03-29 19:19:56,547 - INFO - Leak detection threshold updated to 9 MB/min
+2025-03-29 19:19:56,588 - INFO - Leak detection threshold updated to 8 MB/min
+2025-03-29 19:19:56,770 - INFO - Leak detection threshold updated to 7 MB/min
+2025-03-29 19:19:56,963 - INFO - Leak detection threshold updated to 6 MB/min
+2025-03-29 19:19:57,582 - INFO - Leak detection threshold updated to 5 MB/min
+2025-03-29 19:19:57,582 - INFO - Leak detection threshold updated to 4 MB/min
+2025-03-29 19:19:57,772 - INFO - Leak detection threshold updated to 3 MB/min
+2025-03-29 19:19:58,317 - INFO - Leak detection threshold updated to 2 MB/min
+2025-03-29 19:19:58,584 - INFO - Leak detection threshold updated to 1 MB/min
+2025-03-29 19:19:59,899 - INFO - Leak detection threshold updated to 2 MB/min
+2025-03-29 19:20:00,106 - INFO - Leak detection threshold updated to 3 MB/min
+2025-03-29 19:20:00,316 - INFO - Leak detection threshold updated to 4 MB/min
+2025-03-29 19:20:00,632 - INFO - Leak detection threshold updated to 5 MB/min
+2025-03-29 19:20:00,733 - INFO - Leak detection threshold updated to 6 MB/min
+2025-03-29 19:20:01,651 - INFO - Leak detection threshold updated to 7 MB/min
+2025-03-29 19:20:01,833 - INFO - Leak detection threshold updated to 8 MB/min
+2025-03-29 19:20:02,213 - INFO - Leak detection threshold updated to 9 MB/min
+2025-03-29 19:20:02,706 - INFO - Leak detection threshold updated to 10 MB/min
+2025-03-29 19:20:03,317 - INFO - Leak detection threshold updated to 11 MB/min
+2025-03-29 19:20:03,746 - INFO - Leak detection threshold updated to 12 MB/min
+2025-03-29 19:20:07,315 - INFO - Leak detection threshold updated to 11 MB/min
+2025-03-29 19:20:08,433 - INFO - Leak detection threshold updated to 10 MB/min
+2025-03-29 19:20:15,006 - INFO - Leak detection threshold updated to 1 MB/min
+2025-03-29 19:20:15,392 - INFO - Leak detection threshold updated to 10 MB/min
+2025-03-29 19:20:15,567 - INFO - Leak detection threshold updated to 100 MB/min
+2025-03-29 19:20:15,662 - INFO - Memory leak condition cleared
+2025-03-29 19:20:15,866 - INFO - Leak detection threshold updated to 1000 MB/min
+2025-03-29 19:20:17,172 - INFO - Leak detection threshold updated to 1000 MB/min
+2025-03-29 19:24:25,319 - INFO - Manual garbage collection performed
+2025-03-29 19:24:27,720 - INFO - Data exported to memory_data_20250329_192427.csv
+2025-03-29 19:24:41,743 - WARNING - Potential memory leak detected! Projected increase: 30.69MB/min
+2025-03-29 19:24:55,928 - INFO - Data exported to memory_data_20250329_192455.csv
+2025-03-29 19:25:07,270 - INFO - Memory leak condition cleared
+2025-03-29 19:29:20,501 - INFO - Data exported to memory_data_20250329_192920.csv
+2025-03-29 19:29:46,831 - WARNING - Potential memory leak detected! Projected increase: 18.57MB/min
+2025-03-29 19:29:48,872 - INFO - Memory leak condition cleared
+2025-03-29 19:29:54,005 - WARNING - Potential memory leak detected! Projected increase: 10.16MB/min
+2025-03-29 19:30:08,079 - INFO - Data exported to memory_data_20250329_193008.csv
+2025-03-29 19:30:12,374 - INFO - Memory leak condition cleared

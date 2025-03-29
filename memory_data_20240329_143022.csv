@@ -1,0 +1,113 @@
+def export_data(self):
+    """Export collected data to CSV"""
+    try:
+        df = self.tracker.get_history_df()
+        if not df.empty:
+            filename = f"memory_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+            df.to_csv(filename, index=False)
+            self.statusBar().showMessage(f"Data exported to {filename}")
+            logging.info(f"Data exported to {filename}")
+            
+            # Open the directory where the file was saved
+            if platform.system() == "Windows":
+                os.startfile(os.path.dirname(os.path.abspath(filename)))
+            elif platform.system() == "Darwin":
+                os.system(f"open {os.path.dirname(os.path.abspath(filename))}")
+            else:
+                os.system(f"xdg-open {os.path.dirname(os.path.abspath(filename))}")
+        else:
+            self.statusBar().showMessage("No data to export")
+    except Exception as e:
+        logging.error(f"Error exporting data: {str(e)}")
+        self.statusBar().showMessage(f"Error: {str(e)}")
+
+
+        def export_data(self):
+    """Export collected data to multiple formats"""
+    try:
+        df = self.tracker.get_history_df()
+        if df.empty:
+            self.statusBar().showMessage("No data to export")
+            return
+            
+        # Get save path from user
+        filename, _ = QFileDialog.getSaveFileName(
+            self,
+            "Export Memory Data",
+            f"memory_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}",
+            "CSV Files (*.csv);;Excel Files (*.xlsx);;JSON Files (*.json)"
+        )
+        
+        if not filename:
+            return  # User cancelled
+            
+        if filename.endswith('.csv'):
+            df.to_csv(filename, index=False)
+        elif filename.endswith('.xlsx'):
+            df.to_excel(filename, index=False)
+        elif filename.endswith('.json'):
+            df.to_json(filename, indent=4)
+            
+        self.statusBar().showMessage(f"Data exported to {filename}")
+        logging.info(f"Data exported to {filename}")
+        
+    except Exception as e:
+        logging.error(f"Error exporting data: {str(e)}")
+        self.statusBar().showMessage(f"Error: {str(e)}")
+
+
+
+        def export_summary_report(self):
+    """Export a formatted summary report"""
+    try:
+        df = self.tracker.get_history_df()
+        if df.empty:
+            self.statusBar().showMessage("No data to export")
+            return
+            
+        summary = self.tracker.get_summary_stats()
+        filename = f"memory_report_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        
+        with open(filename, 'w') as f:
+            f.write("=== Memory Usage Report ===\n")
+            f.write(f"Generated at: {datetime.now()}\n\n")
+            f.write("System Information:\n")
+            for k, v in self.tracker.system_info.items():
+                f.write(f"{k}: {v}\n")
+                
+            f.write("\nSummary Statistics:\n")
+            for k, v in summary.items():
+                f.write(f"{k}: {v}\n")
+                
+            f.write("\nLast 10 Measurements:\n")
+            f.write(df.tail(10).to_string())
+            
+        self.statusBar().showMessage(f"Report exported to {filename}")
+        logging.info(f"Report exported to {filename}")
+        
+    except Exception as e:
+        logging.error(f"Error exporting report: {str(e)}")
+        self.statusBar().showMessage(f"Error: {str(e)}")
+
+
+        def setup_auto_export(self, interval_minutes=60):
+    """Set up automatic data export"""
+    self.auto_export_timer = QTimer()
+    self.auto_export_timer.timeout.connect(self.auto_export)
+    self.auto_export_timer.start(interval_minutes * 60 * 1000)  # Convert to ms
+
+def auto_export(self):
+    """Handle automatic export"""
+    try:
+        df = self.tracker.get_history_df()
+        if not df.empty:
+            dirname = "memory_exports"
+            os.makedirs(dirname, exist_ok=True)
+            filename = f"{dirname}/auto_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+            df.to_csv(filename, index=False)
+            logging.info(f"Auto-exported data to {filename}")
+    except Exception as e:
+        logging.error(f"Error in auto-export: {str(e)}")
+
+
+        
